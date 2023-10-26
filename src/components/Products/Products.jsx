@@ -20,15 +20,21 @@ import image17 from "../../assets/products/watch-prod-1.webp";
 import image18 from "../../assets/products/watch-prod-2.webp";
 import image19 from "../../assets/products/watch-prod-3.webp";
 import Product from "./Product/Product";
+import ScrollToTop from "react-scroll-to-top";
+import { useEffect } from "react";
+
 const Products = (props) => {
-    
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
     return (<div>
         <div className="product-container">
             <div className="sec-heading">
             {props.title}
             </div>
                 <div className="products">
-                    <Product image={image1} />
+                    <Product image={image1}/>
                     <Product image={image2}/>
                     <Product image={image3}/>
                     <Product image={image4}/>
@@ -47,6 +53,7 @@ const Products = (props) => {
                     <Product image={image17}/>
                     <Product image={image18}/>
                     <Product image={image19}/>
+                    <ScrollToTop smooth/>
                 </div>
         </div>
     </div>);

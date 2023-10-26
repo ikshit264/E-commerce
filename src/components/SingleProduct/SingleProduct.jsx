@@ -7,12 +7,16 @@ import {
   FaPinterest,
   FaInstagram,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import prod from "../../assets/products/earbuds-prod-1.webp";
 const SingleProduct = (props) => {
-
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   return (
     <div className="single-product-main-contetnt">
       <div className="layout">
