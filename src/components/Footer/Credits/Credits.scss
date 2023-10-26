@@ -1,0 +1,28 @@
+@import "../../../css-config/mixins.scss";
+
+.credit{
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    @include md{
+        flex-direction: row;
+        display: flex;
+    }
+    .right{
+        @include md{
+            padding-left: 60px;
+        }
+        text-align: center;
+        font-size: 15px;
+        color: rgb(84, 84, 84);
+    }
+    .left{
+        @include md{
+            padding-right: 60px;
+        }
+    }
+}

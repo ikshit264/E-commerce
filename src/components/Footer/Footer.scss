@@ -1,0 +1,123 @@
+@import "../../css-config/mixins.scss";
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include md{
+        margin: 20px 100px 20px 100px;
+        flex-direction: row;
+    }
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: top;
+    .about{
+        padding: 0px 10px;
+        text-align: left;
+        width: 100%;
+        @include md{
+            width: 25%;
+        }
+        h3{
+            padding-left: 20px;
+        }
+        p{
+            font-size: 15px;
+            color: rgb(74, 73, 73);
+            padding: 10px;
+            align-items: center;
+            text-align: left;
+        }
+    }
+    .contact{
+        width: 90%;
+        // padding: 0px 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        @include md{
+            width: 20%;
+
+        }
+        h3{
+            padding-left: 20px;
+        }
+        .contact-content{
+            font-size: 15px;
+            color: rgb(74, 73, 73);
+            .cc{
+                display: flex;
+                margin-bottom: 10px;
+                svg{
+                    flex-shrink: 0;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                    color: black;
+                }
+            }
+            
+            
+        }
+        
+    }
+    .display{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @include md{
+            width: 50%;
+
+        }
+    }
+    .categories{
+        display: inline-block;
+        @include md{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+        // padding: 0px 10px;
+        text-align: left;
+        display: inline-block;
+        flex-direction: column;
+        h3{
+            padding-left: 20px;
+            align-items: left;
+            padding-bottom: 4px;
+        }
+        .categori-list{
+            font-size: 17px;
+            display: flex;
+            // gap: 3px;
+            flex-direction: column;
+            text-align: left;
+            a{
+                text-decoration: none;
+                color: rgb(74, 73, 73);
+            }
+        }
+    }
+    .page{
+        flex-direction: column;
+        display: inline-block;
+        @include md{
+            display: flex;
+            width: 25%;
+        }
+        // padding: 0px 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        h3{
+            padding-left: 20px;
+            align-items: left;
+            padding-bottom: 4px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(74, 73, 73);
+        }
+    }
+}

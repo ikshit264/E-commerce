@@ -1,0 +1,125 @@
+@import "../../../css-config/mixins.scss";
+.hero-banner {
+    padding: 40px 40px;
+    // position: relative;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-bottom-left-radius: 3px;
+    background-size: auto;
+    overflow: none;
+    border-bottom-right-radius: 3px;
+    @include md {
+        
+        height: calc(500px - 40px);
+        padding: 3px 0px;
+    }
+    @include lg {
+        height: calc(100vh - 20px);
+  }
+  // @include xl {
+  //   width: 100%;
+  //   height: calc(100vh - 20px);
+  // }
+  .banner-content {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    justify-content: center;
+    // align-items:flex-start;
+    @include md {
+      flex-direction: row;
+    }
+    .text-content {
+      z-index: 30;
+      padding: 30px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      @include md {
+        width: 85%;
+        flex-direction: column;
+        width: 50%;
+      }
+      h1 {
+        color: whitesmoke;
+        font-size: 100px;
+        padding: 30px;
+      }
+      p{
+        width: 80%;
+        padding: 30px;
+        text-align: center ;
+        color: whitesmoke;
+      }
+      .ctas {
+        display: flex;
+        gap: 40px;
+        color: white;
+        .banner-cta-1 {
+          padding: 8px;
+          border: 2.5px solid white;
+          border-radius: 2px;
+        }
+        .banner-cta-2 {
+          color: black;
+          font-weight: 900;
+          background-color: white;
+          padding: 8px;
+          border: 2.5px solid white;
+          border-radius: 2px;
+        }
+        .banner-cta-1:hover {
+          animation: change-color-1 0.5s ease forwards;
+          cursor: pointer;
+        }
+        @keyframes change-color-1 {
+          from {
+            border-color: white;
+          }
+          to {
+            // border-width: 4px;
+            border-color: rgb(205, 205, 205);
+          }
+        }
+        .banner-cta-2:hover {
+          animation: change-color 0.5s ease forwards;
+          color: rgb(10, 0, 0);
+          cursor: pointer;
+        }
+        @keyframes change-color {
+          from {
+            background-color: white;
+          }
+          to {
+            background-color: rgb(209, 204, 204);
+          }
+        }
+      }
+    }
+    .banner-img {
+      filter: grayscale(0.3);
+      display: flexbox;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 9;
+      right: 0;
+      top: 0;
+      width: 80%;
+      @include md {
+        width: 45%;
+        filter: grayscale(0.3);
+      }
+      @include lg {
+        padding-top: 0px;
+        width: 40%;
+      }
+      @include xl {
+        padding-top: 0px;
+        width: 39%;
+      }
+    }
+  }
+}

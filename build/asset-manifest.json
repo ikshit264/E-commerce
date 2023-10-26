@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/E-commerce/static/css/main.10bec097.css",
+    "main.js": "/E-commerce/static/js/main.d157a2b0.js",
+    "static/media/cat-2.jpg": "/E-commerce/static/media/cat-2.c783bc351239091a6ba7.jpg",
+    "static/media/cat-3.jpg": "/E-commerce/static/media/cat-3.a8441fd9d3326934ed92.jpg",
+    "static/media/cat-1.jpg": "/E-commerce/static/media/cat-1.aa15048c6d1dc6572a81.jpg",
+    "static/media/cat-4.jpg": "/E-commerce/static/media/cat-4.427b423a2e66b77f3ba8.jpg",
+    "static/media/banner-img.png": "/E-commerce/static/media/banner-img.0412d66280a0273effa2.png",
+    "static/media/newsletter-bg.jpeg": "/E-commerce/static/media/newsletter-bg.b6f22313149bdbb35069.jpeg",
+    "static/media/speaker-prod-3.webp": "/E-commerce/static/media/speaker-prod-3.171d61c75a6ff02f39ae.webp",
+    "static/media/speaker-prod-2.webp": "/E-commerce/static/media/speaker-prod-2.3d7d2e99c70aca629a57.webp",
+    "static/media/speaker-prod-4.webp": "/E-commerce/static/media/speaker-prod-4.eb364fc82b627804c684.webp",
+    "static/media/headphone-prod-6.webp": "/E-commerce/static/media/headphone-prod-6.2635441704f71c9ce13d.webp",
+    "static/media/headphone-prod-1.webp": "/E-commerce/static/media/headphone-prod-1.49810a1a193aa5efb36b.webp",
+    "static/media/headphone-prod-2.webp": "/E-commerce/static/media/headphone-prod-2.62c9faa99a0770201113.webp",
+    "static/media/watch-prod-2.webp": "/E-commerce/static/media/watch-prod-2.d396cef66ae80ed71919.webp",
+    "static/media/headphone-prod-3.webp": "/E-commerce/static/media/headphone-prod-3.569440e673fc3245c822.webp",
+    "static/media/headphone-prod-5.webp": "/E-commerce/static/media/headphone-prod-5.dcb23ddae9e857c43b86.webp",
+    "static/media/headphone-prod-4.webp": "/E-commerce/static/media/headphone-prod-4.e29d57f5084215030f91.webp",
+    "static/media/earbuds-prod-4.webp": "/E-commerce/static/media/earbuds-prod-4.3da5a36747aae317d82e.webp",
+    "static/media/earbuds-prod-2.webp": "/E-commerce/static/media/earbuds-prod-2.67477bdbf3f67b3f559d.webp",
+    "static/media/speaker-prod-5.webp": "/E-commerce/static/media/speaker-prod-5.2567d9da4c7c02b221b2.webp",
+    "static/media/watch-prod-1.webp": "/E-commerce/static/media/watch-prod-1.50f973edaaeb9a581ab0.webp",
+    "static/media/watch-prod-3.webp": "/E-commerce/static/media/watch-prod-3.7cd90926daa3c6f029a2.webp",
+    "static/media/speaker-prod-1.webp": "/E-commerce/static/media/speaker-prod-1.92704e4cebd276042973.webp",
+    "static/media/earbuds-prod-3.webp": "/E-commerce/static/media/earbuds-prod-3.a317d55b6ddd68ea73b7.webp",
+    "static/media/earbuds-prod-1.webp": "/E-commerce/static/media/earbuds-prod-1.8a82669f0f771bfe5709.webp",
+    "static/media/earbuds-prod-5.webp": "/E-commerce/static/media/earbuds-prod-5.2f395e34d2513bcb9a77.webp",
+    "index.html": "/E-commerce/index.html",
+    "main.10bec097.css.map": "/E-commerce/static/css/main.10bec097.css.map",
+    "main.d157a2b0.js.map": "/E-commerce/static/js/main.d157a2b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10bec097.css",
+    "static/js/main.d157a2b0.js"
+  ]
+}

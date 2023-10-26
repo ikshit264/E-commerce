@@ -1,0 +1,102 @@
+@import "../../../css-config/mixins.scss";
+
+.product-card{
+    width: calc(50% - 5px);
+    margin-bottom: 20px;
+    @include md{
+        width: calc(25% - 20px);
+    }
+    .none{
+        text-decoration: none;
+    }
+    .thumbnail{
+        width: 90%;
+        height: 200px;
+        margin: 20px;
+        // padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease .2s;
+        img{
+            overflow: hidden;
+            // display: flex;
+            // padding-right: 4%;
+            // align-items: center;
+            // margin: 4%;
+            width: 90%;
+            background: rgb(192, 192, 192);
+            transition: all ease .4s;
+            border-radius: 25px;
+        }
+    }
+    .prod-details{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+        transition: all ease .4s;
+        .name{
+            transition: all ease .4s;
+            display: flex;
+            padding: 0 0 0 0 ;
+            flex-direction: column;
+            // align-items: center;
+            &:after{
+                content: "";
+                width: 120px;
+                height: 3px;
+                background-color: rgb(8, 111, 111);
+            }
+        }
+    }
+    &:hover{
+        .thumbnail{
+            margin-left: 10px;
+        }
+        img{
+        transform: scale(1.2);
+        margin-top: 30px;
+        // margin-left: 0;
+        padding: 10px;
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+        .prod-details{
+            .name{
+            font-size: larger;
+            }
+            padding: 0px 0 0 10px;
+        }
+        @include md{
+            .prod-details{
+                .name{
+                font-size: larger;
+                }
+                padding: 10px 0 0 20px;
+            }
+        }
+        @include lg{
+            .prod-details{
+                .name{
+                font-size: larger;
+                }
+                padding: 40px 0 0 40px;
+            }
+        }
+        @include xl{
+            .prod-details{
+                .name{
+                font-size: larger;
+                }
+                padding: 0px 0 0 0px;
+            }
+        }
+    }
+    
+}

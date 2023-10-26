@@ -1,0 +1,106 @@
+@import "../../css-config/mixins.scss";
+
+.main-header {
+  background-color: rgb(0, 0, 0);
+  font-size: larger;
+  padding: 0px 20px;
+  @include md {
+    padding: 0 40px;
+  }
+  color: white;
+  // border-bottom: 4px solid rgba(0, 0, 0, 0.364);
+  z-index: 99;
+  position: sticky;
+  .header-content {
+    display: flex;
+    // padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 1400px;
+    margin: auto auto;
+  }
+  .left {
+    list-style-type: none;
+    font-weight: 400;
+    // display: none;
+    @include md {
+      display: flex;
+    }
+    .none, a{
+      font-size: 20px;
+      text-decoration: none;
+      gap: 5px;
+    cursor: pointer;
+    li {
+      text-transform: uppercase;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.041);
+      padding: 5px 5px;
+      border-radius: 5px;
+    }
+  }
+  }
+  .center {
+    font-size: 34px;
+    font-weight: 650;
+    cursor: pointer;
+    list-style: none;
+    @include md {
+      font-size: 30px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    svg{
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .cart-icon {
+      position: relative;
+      span {
+        max-width: 10px;
+        text-align: center;
+        background-color: #e22d2d;
+        width: 10px;
+        padding: 2.5px;
+        padding-right: 9px;
+        position: absolute;
+        top: -5px;
+        right: -4px;
+        font-size: 12px;
+        line-height: .8;
+        border-radius: 5px;
+      }
+    }
+  }
+  &.Sticky-header {
+    position: sticky;
+    top: 0;
+    animation: stickyheader .9s ease forwards;
+  }
+  
+}
+//niche aate aate kam hoke firse badhte hue dhika skte hai.
+@keyframes stickyheader{
+  0% {
+    border-radius: none;
+    transform: translateY(-80px);
+  }
+  25%{
+    border-radius: 1px;
+  }
+  75%{
+    transform: translateY(0) ;
+    border-radius: 30px;
+  }
+  100% {
+    border-radius: 20px;
+  }
+}
